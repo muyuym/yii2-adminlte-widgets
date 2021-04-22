@@ -12,13 +12,13 @@ v1 for adminlte3
 Either run
 
 ```
-composer require --prefer-dist "hail812/yii2-adminlte-widgets=~1.0.0"
+composer require --prefer-dist "hail812/yii2-adminlte-widgets=~1.0"
 ```
 
 or add
 
 ```
-"hail812/yii2-adminlte-widgets": "~1.0.0"
+"hail812/yii2-adminlte-widgets": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
