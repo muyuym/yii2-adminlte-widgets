@@ -37,7 +37,7 @@ class Alert extends Widget
 
     public $type;
 
-    public $title = 'Alert';
+    public $title = 'Alert!';
 
     public $icon;
 
@@ -81,7 +81,7 @@ class Alert extends Widget
         if (!$this->simple) {
             $icon = $this->icon ?? $this->alertTypes[$this->type]['icon'] ?? null;
             $iconHtml = $icon ? '<i class="icon fas '.$icon.'"></i>' : '';
-            $head = '<h5>'.$iconHtml.' '.$this->title.'!</h5>';
+            $head = '<h5>'.$iconHtml.' '.$this->title.'</h5>';
         }
 
         echo \yii\bootstrap4\Alert::widget([
