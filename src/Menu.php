@@ -160,7 +160,7 @@ class Menu extends \yii\widgets\Menu
             $treeFlag = '<i class="right fas fa-angle-left"></i>';
         }
 
-        $template = ArrayHelper::getValue($item, 'template', $this->linkTemplate);
+        $template = ArrayHelper::getValue($item, 'template', (isset($item['linkTemplate']))? $item['linkTemplate'] : $this->linkTemplate);
         return strtr($template, [
             '{label}' => strtr($this->labelTemplate, [
                 '{label}' => $item['label'],
